@@ -31,9 +31,15 @@ public class MainActivity extends AppCompatActivity {
         MobileNumber.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if(is_number){
-                    
+                if(!is_number){
+                    MobileNumber.setText("Use Email");
+                    Username.setHint("Mobile Number");
+                    is_number = true;
+                    return;
                 }
+                MobileNumber.setText("Use Mobile Number");
+                Username.setHint("Email");
+                is_number = false;
             }
         });
     }
