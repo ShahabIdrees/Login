@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 MobileNumber.setText("Use Mobile Number");
                 Username.setHint("Email");
-                is_number = false;
+                is_number = true;
             }
         });
     }
